@@ -71,22 +71,26 @@ function Profile() {
                 className="px-[12px] py-0 md:px-5 text-ellipsis md:py-2"
               />
             </div>
-            <div className="flex flex-col w-full mb-2 max-w-[800px] md:pl-5 text-left self-end">
-              <label htmlFor="name">New Password</label>
-              <input
-                type="text"
-                placeholder="New Password"
-                className="px-[12px] py-0 md:px-5 text-ellipsis md:py-2 rounded-md border-[1px] border-grey-600"
-              />
-            </div>
-            <div className="flex flex-col w-full mb-2 max-w-[800px] md:pl-5 text-left self-end">
-              <label htmlFor="name">Confirm New Password</label>
-              <input
-                type="text"
-                placeholder="Confirm New Password"
-                className="px-[12px] py-0 md:px-5 text-ellipsis md:py-2 rounded-md border-[1px] border-grey-600"
-              />
-            </div>
+            {editable && (
+              <div className="flex flex-col w-full mb-2 max-w-[800px] md:pl-5 text-left self-end">
+                <label htmlFor="name">New Password</label>
+                <input
+                  type="text"
+                  placeholder="New Password"
+                  className="px-[12px] py-0 md:px-5 text-ellipsis md:py-2 rounded-md border-[1px] border-grey-600"
+                />
+              </div>
+            )}
+            {editable && (
+              <div className="flex flex-col w-full mb-2 max-w-[800px] md:pl-5 text-left self-end">
+                <label htmlFor="name">Confirm New Password</label>
+                <input
+                  type="text"
+                  placeholder="Confirm New Password"
+                  className="px-[12px] py-0 md:px-5 text-ellipsis md:py-2 rounded-md border-[1px] border-grey-600"
+                />
+              </div>
+            )}
           </form>
         </div>
       </section>
