@@ -1,0 +1,17 @@
+{
+  "name": "manifest",
+  "short_name": "manifest",
+  "description": "webknight techbrain hackathon 2022",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "icon-temp.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#000000"
+}
